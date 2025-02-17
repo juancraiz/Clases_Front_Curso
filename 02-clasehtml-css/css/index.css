@@ -1,0 +1,29 @@
+/* 1.Seleccionamos el selector: de tag-etiqueta */
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    background-color: white;
+}
+
+/* 2. editando selectores h2 */
+h2{
+    color: darkgreen;
+}
+
+/* 3. Seleccion por clases (class)
+ edito un selector h2 en particular mediante selector de clase poniendole
+un nombre de una clase a un h2 en el archivo html y lo llamo aqui */
+.tituloRojo{
+    color:red;
+}
+
+.tipografiaNueva{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* 4. Seleccion por id */
+#parrafoAzul{
+    color: blue;
+}

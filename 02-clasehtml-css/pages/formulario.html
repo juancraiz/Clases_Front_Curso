@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+    
+    <h1>Formulario de contacto</h1>
+    <!-- modificamos el atributo form para q vaya a buscar un archivo "\database" donde se enviaran los datos,
+     y q el metodo de envio de datos sea "Post"(asignar,enviar,setter,dar de alta )-->
+     <!-- mas adelante el archivo database lo vamos a matchear con el backend -->
+
+    <form action="" id="formregister"><!-- ponemos un id en form para poder acceder desde otro lado de la pag con un vinculo con su id -->
+        <!-- es crucial poner los campos dentro de la etiqueta form ya q sino los datos en el input
+         jamas seran enviados -->
+        <label for="nombre">Nombre:</label> <br> <!-- br:breack rote para hacer un enter o salto de linea -->
+        <input type="text" id="nombre" name="nombre" required>  <br> 
+        <!-- el name sirve para q se puede capturar el nombre tipeado en el campo y q ese
+         dato pueda ser enviado(al front q sera mi intermediario para llevarlo a la base de datos) -->
+
+        <label for="apellido">Apellido:</label> <br>
+        <input type="text" id="apellido" name="apellido" required>          <br>
+        <!-- el required me dice que este dato es requerido, esdecir q para poder
+         enviar todos los datos , se debe completar obligatoriamente -->
+         <!-- el autofocus me hace un cuadro de remarco en el campo input donde cargo el apellido-->
+
+         <label for="edad">Edad:</label> <br>
+        <input type="number" id="edad" name="edad" min="0" max="110" required>                  <br>
+
+        <label for="dni">Dni:</label> <br>
+        <input type="number" id="dni" name="dni" maxlength="8" required>                  <br>
+
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" name="email" pattern="([a-zA-Z0-9]([^ @&%$\\\/()=?¿!.,:;]?|\d?)+[a-zA-Z0-9][\.]){2,4}" placeholder="pepe@gmail.com" >          <br>
+
+        <label for="password">Password:</label> <br>
+        <input type="password" id="password" name="password" minlength="10"  required>                  <br>
+
+        <!-- el tipo sumbmit es un boton q recoje toda la info del formulario , y la envia a \database.
+         Ojo no usar type button ya q este no recoje informacion-->
+        <input type="submit" value="Enviar Datos">     
+    </form>
+
+    <!-- ruta relativa (local de nuestra pag o vinculo local) -->
+     <div>
+        <button>
+            <a href="../index.html#piedepagina">Ruta Relativa</a>
+        </button>
+     </div>
+
+     <!-- ruta absoluta (son otras paginas web externas a la nuestra) abierta en superposicion -->
+     <div>
+        <button>
+            <a href="https://www.google.com/?hl=es">Ruta Absoluta</a>
+            
+        </button>
+     </div>
+
+      <!-- ruta absoluta (son otras paginas web externas a la nuestra) abierta en otra pestaña -->
+      <div>
+        <button>
+            <a href="https://www.google.com/?hl=es" target="_blank">Ruta Absoluta 2</a>
+            
+        </button>
+     </div>
+     
+     <!--mostrar imagen de un link -->
+     <img src="https://e7.pngegg.com/pngimages/262/1003/png-clipart-all-rights-reserved-copyright-logo-copyright-symbol-trademark-symbol-computer-keyboard-copyright-text-trademark-thumbnail.png" alt="Imagen de copyright">
+      <!--mostrar imagen desde ruta local-->
+     <img src="../assets/images/imagen_copyr.jpg" alt="Imagen de copyright">
+     
+     <!-- entrar a link relativo clickeando en imagen -->
+     <a href="../pages/abrigos.html">
+     <img src="../assets/images/imagen_copyr.jpg" alt="Imagen de copyright">  
+     </a>
+    
+    </body>
+</html>

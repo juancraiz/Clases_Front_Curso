@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1.linkeamos el archivo css a la pagina web .html 
+     Esto signfica establecemos las reglas tipeando codigo dentro del archivo
+    index.css (Es lo usual/Recomiendo)-->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- 2.Ponemos reglas de stilos de css dentro de este archivo html (No es usual)-->
+    <style>
+        body{
+            background-color: brown;
+            font-size: 18px;
+        }
+        h1{
+            color:blue
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Alt + shift + a -->
+     <!-- hay veces q la barra de navegacion esta dentro del header, hay veces q esta la barra de naveg y no
+      esta el header y eso depende de los diseñadores ui -->
+     <header>
+         <!-- Barra de navegacion (va una lista de cosas)-->
+         <nav>
+            <ul>
+                <!--para agregar items a la lista mediante etiqueta li -->
+                <li>
+                    <!--esta etiqueta 'ancla' sirve para q cuando hafamos click en la pagina Productos, se 
+                    nos redirija a la pagina Productos -->
+                    <a href="./pages/abrigos.html">Abrigos</a>
+                </li>
+                <li>
+                    <a href="./pages/pantalones.html">Pantalones</a>
+                </li>
+                <li>
+                    <a href="./pages/formulario.html">Formulario para descuento</a>
+                </li>
+            </ul>
+    
+         </nav>
+         
+     </header>
+     
+
+    
+     <!-- Cuerpo pcipal de la app-->
+     <main>
+        <section>
+            <h1> Productos para la casa</h1>
+            <article>
+                <h2 class="tituloRojo tipografiaNueva">Cocina</h2>
+                    <p id="parrafoAzul">
+                    Lorem ipsum dolor sit amet consectetur,<a href="./pages/formulario.html#formregister">Formulario</a> adipisicing elit. Porro illo eius, quia delectus
+                     animi modi quos quae recusandae dolore officiis distinctio possimus iusto sapiente 
+                     dignissimos voluptatem voluptas ad odio ducimus.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque voluptatem totam
+                         quaerat deleniti sequi! Laboriosam quae iste error voluptatem, 
+                        aliquam quod deleniti atque, cupiditate ut tempora cum perferendis fugiat.
+                    </p>
+            </article>
+            <article>
+                <h2 class="tituloRojo">Dormitorios</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam quos illum consequuntur 
+                    provident incidunt nihil placeat quibusdam culpa? Culpa corrupti sunt nisi 
+                    fugiat possimus reprehenderit omnis tempora unde maxime!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam quos illum consequuntur
+                     provident incidunt nihil placeat quibusdam culpa? Culpa corrupti sunt nisi fugiat possimus
+                      reprehenderit omnis tempora unde maxime!</p>
+            </article>
+        </section>
+        <section>
+            <h1>Automotores</h1>
+            <article>
+                <h2>Fiat</h2>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro illo eius, quia delectus
+                     animi modi quos quae recusandae dolore officiis distinctio possimus iusto sapiente 
+                     dignissimos voluptatem voluptas ad odio ducimus.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque voluptatem totam
+                         quaerat deleniti sequi! Laboriosam quae iste error voluptatem, 
+                        aliquam quod deleniti atque, cupiditate ut tempora cum perferendis fugiat.
+                    </p>
+            </article>
+            <article>
+                <h2>Peugeot</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam quos illum consequuntur 
+                    provident incidunt nihil placeat quibusdam culpa? Culpa corrupti sunt nisi 
+                    fugiat possimus reprehenderit omnis tempora unde maxime!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam quos illum consequuntur
+                     provident incidunt nihil placeat quibusdam culpa? Culpa corrupti sunt nisi fugiat possimus
+                      reprehenderit omnis tempora unde maxime!</p>
+            </article>
+        </section>
+        <section>
+            <h1>Listas Ordenadas</h1>
+            <!-- lista ordenada con etiqueta ol (enumera)-->
+            <ol>
+            <!--para agregar items a la lista mediante etiqueta li -->
+            <li>Fideos</li>
+            <li>Arroz</li>
+            <li>Papa</li>
+            <li>Aji</li>
+            </ol>
+        </section>
+        <section>
+            <h1>Listas Desordenadas</h1>
+            <!-- lista desordenada con etiqueta ul -->
+            <ul>
+            <!--para agregar items a la lista mediante etiqueta li -->
+            <li>Fideos</li>
+            <li>Arroz</li>
+            <li>Papa</li>
+            <li>Aji</li>
+            </ul>
+        </section>
+
+     </main>
+
+     <!-- pie de pagina (redes sociales y demas gralmente)-->
+     <footer id="piedepagina"> <!-- le ponemos un id al footer para poder acceder desde otro
+         lado de nuestra pag. a nivel local,por ej podremos acceder a este footer en la pag formulario -->
+        <address>
+            9 DE JULIO 655 - Basavilbaso -Entre Rios - Argentina 
+        </address>
+     </footer>
+
+
+</body>
+</html>

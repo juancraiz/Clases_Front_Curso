@@ -1,0 +1,100 @@
+/* reseteo de css: para cortar la configuracion por default del navegador 
+Esto hara que pueda manipular lo cerca q estaran los elementos, tanto las imagenes, y labels*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+li{border: solid 3px black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px; /* con esto le doy margen a los costados de las imagenes  */
+    margin:-1.5px;
+}
+
+@font-face { /* agrego una fuente q decarguepa usar dps */
+    font-family: fuenteNebular;
+    src: url(/fuentes/Nebula-Regular.otf);
+}
+
+li a{
+    text-decoration:none;
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;/*  fuenteNebular,serif; */
+    font-size:large;    
+}   
+
+
+body{
+    background-color: beige;
+}
+
+/* todos los div tendran este estilo.Los divs son elementos en bloque */
+div{
+    border: solid 1px black;
+    padding: 10px; /* con esto le doy margen a los costados de las imagenes  */
+    margin: 10px; /* con esto le doy margen entre cada etiqueta  */
+    
+    /* float:right -->esta config usando float no se suele utilizar,ya q usamos flexbox   */
+}
+
+/* uso de flexbox : para la organizacion de la lista de bloques*/
+.contenedorPadre{
+    display: flex; /* con esto activo el flex */
+    flex-direction: row; /* tbm hay row-reverse,column-reverse */
+    /* flex-direction: column; esto es alpedo usar xq por default el navegador lo pone como columna */
+    flex-wrap: wrap; /* esto me evita scrollear horizontalmente en la fila de bloques,con lo cual habra muchas filas
+    de bloques evitando asi el scrolleo horizontal*/
+}
+
+/* para editar el tamaño de la imagen ,esdecir edito el tamaño de la etiqueta imagen q es contenedor hijo del padre div */
+/* a todas las imagenes dentro de div(hijas de div) tendran estas caracteristicas */
+div img {
+    width: 300px; /* Ajusta el ancho a 100px */
+    height: auto; /* Mantiene las proporciones originales */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsión */
+} 
+
+/* configuro el boton hijo de div (para poder editarlo de forma precisa
+debo indicar q estoy editando la etiqueta hija de div q es buton) */
+div button{
+    display: block;/* Convierte el botón en un elemento de bloque */
+    margin: 0 auto;/* Centra el botón horizontalmente */
+    padding: 8px;/* alto de boton*/
+    text-align: center;
+}
+
+/* todos las etiquetas hijas "a" de boton temgram esta caracteristica  */
+button a{
+  margin:20px;/* largo de boton */
+  text-decoration: none; 
+  color: black; 
+}
+
+button:hover{  /* hover se usa cuando nos paramos sobre el boton y toma cierto color */
+    background-color: gray;
+    /* color:white letra en blanco */
+}
+
+/* para q aparezca el color blanco q configure en el boton debo ir a la etiqueta
+hija "a" de button y connfigurar alli su hover */
+button a:hover{ 
+    color: white; 
+  }
+
+/*configuro dos etiquetas q tengan mismas caracteristicas.
+todos los h3 y h4 tendran misma caracterisctica  */
+h3,h4{
+    color:black
+}
+
+h1{ display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    font-family:fuenteNebular;
+}
