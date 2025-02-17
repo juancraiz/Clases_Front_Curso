@@ -54,6 +54,5 @@ else{
     //para eliminar un objeto de localStorage
     //localStorage.removeItem(tabla);
 
-  }
+}
 });
-  
